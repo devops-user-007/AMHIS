@@ -1,25 +1,25 @@
 $(document).ready(function() {
                         $("#lnk_home").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#main-container").offset().top
+                                scrollTop: $("#header-container").offset().top
                             }, 2000);
                         });
 
                         $("#lnk_whoarewe").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#whoarewe-container").offset().top
+                                scrollTop: $("#section-whoweare").offset().top
                             }, 2000);
                         });
 
                         $("#lnk_projectgallery").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#projectgallery-container").offset().top
+                                scrollTop: $("#section-projects").offset().top
                             }, 2000);
                         });
 
                         $("#lnk_reviews").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#review-container").offset().top
+                                scrollTop: $("#section-reviews").offset().top
                             }, 2000);
                         });
 

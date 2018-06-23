@@ -10,7 +10,7 @@
         <meta name="description" content="AMHIS Website for Home Improvement, flooring and colouring" />
         <meta name="keywords" content="AMHIS, Avtar Minhas, Handyman, Home Improvement, Flooring, Colouring, Painting, Finishing" />
         <meta name="author" content="Suparn Badwaik & Amandeep Saroya" />
-        <link rel="shortcut icon" href="images/icon.png"> 
+        <link rel="shortcut icon" href="images/icon.png">
         
         <!--<link rel="stylesheet" type="text/css" href="css/background.css" />
         <link rel="stylesheet" type="text/css" href="css/style3.css" />
@@ -18,10 +18,11 @@
         <link rel="stylesheet" type="text/css" href="css/test.css" />
         <link rel="stylesheet" type="text/css" href="css/background2.css" />
         <link rel="stylesheet" type="text/css" href="css/style3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     </head>
-    <body>
+    <body onLoad="flipGallery()">
 
-        <header>
+        <header id="header-container">
             <nav>
                 <ul id="nav-container">
                     <li><a class="cool-link" id="lnk_home">HOME</a></li>
@@ -34,25 +35,26 @@
         </header>
         <article>
             <section id="section-home">
-                <div>
-                    home
-                </div>
                 <div id="home-container">
                     <ul class="cb-slideshow">
-                        <li><span>Image 01</span><div><h3>exp·eri·ence</h3></div></li>
-                        <li><span>Image 02</span><div><h3>floo·ri·ng</h3></div></li>
-                        <li><span>Image 03</span><div><h3>col·our·ing</h3></div></li>
+                        <!--<li><span>Image 01</span><div><h3>exp·eri·ence</h3></div></li>-->
+                        <li><span>Image 01</span><div><h3>floo·ri·ng</h3></div></li>
+                        <li><span>Image 02</span><div><h3>pai·int·ing</h3></div></li>
                         <li><span>Image 03</span><div><h3>per·fec·tion</h3></div></li>
-                        <li><span>Image 05</span><div><h3>s·ty·le</h3></div></li>
-                        <li><span>Image 06</span><div><h3>fin·ish·ing</h3></div></li>
+                        <!--<li><span>Image 05</span><div><h3>s·ty·le</h3></div></li>-->
+                        <li><span>Image 04</span><div><h3>fin·ish·ing</h3></div></li>
                     </ul>
                 </div>
             </section>
             <section id="section-whoweare">
-                <div id="whoarewe-container" class="stripped">
+               <div class="section-header">
+                 <h2>Who Are We</h2>
+                </div> 
+               <div id="whoarewe-container" class="stripped">
                     <div class="section-content-container" data-aos="fade-up" data-aos-duration="3000">
                         <div class="section-photo">
                         </div>
+
                         <div class="section-text">
                             <h2>AVTAR MINHAS</h2>
                             <h3>FOUNDER</h3>
@@ -62,9 +64,9 @@
                             <br/><br/>
                             <h3>AHMIS SERVICES</h3>
                             <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia 
+                                the standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia 
                             </p>
-
                         </div>
                         <section id="projectgallery-scroll" class="projectgallery-scroll">
                               <a id="lnk_projectgallery"><span></span>Project Gallery</a>
@@ -72,47 +74,83 @@
                     </div>
                 </div>
             </section>
-            <section id="section-projects">
-                <div id="projectgallery-container" class="stripped">
+            <section id="section-services">
+                <div class="section-header-content">
+                    <h2 id="section-title-services">WE SPECIALIZE</h2>
+                </div>
+                <div id="services-container">
                     <div class="section-content-container" data-aos="fade-up" data-aos-duration="3000">
-                        <div class="section-photo">
-                        </div>
-                        <div class="section-text">
-                            <h2>PROJECTS</h2>
-                            <h3>FOUNDER</h3>
-                            <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </p>
-                            <br/><br/>
-                            <h3>AHMIS SERVICES</h3>
-                            <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-                            </p>
+                        <div class="services-container">
+                            <div class="services-list">
+                                <div class="item">
+                                    <div class="service-content">
+                                        <div class="service-photo painting"></div>
+                                        <h3> PAINTING</h3>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="service-content">
+                                        <div class="service-photo flooring"></div>
+                                        <h3>FLOORING</h3>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="service-content">
+                                        <div class="service-photo kitchenbath"></div>
+                                        <h3>KITCHEN & BATH REMODELLING</h3>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <div class="service-content">
+                                        <div class="service-photo interior"></div>
+                                        <h3>INTERIOR RENOVATIONS</h3>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
-                        <section id="reviews-scroll" class="reviews-scroll">
-                              <a id="lnk_reviews"><span></span>Reviews</a>
-                        </section>
                     </div>
                 </div>
             </section>
+            
             <section id="section-reviews">
+                <div class="section-header-content">
+                    <h2 id="section-title-reviews">CLIENT REVIEWS</h2>
+                </div>
                 <div id="reviews-container" class="stripped">
                     <div class="section-content-container" data-aos="fade-up" data-aos-duration="3000">
-                        <div class="section-photo">
-                        </div>
-                        <div class="section-text">
-                            <h2>REVIEWS</h2>
-                            <h3>FOUNDER</h3>
-                            <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </p>
-                            <br/><br/>
-                            <h3>AHMIS SERVICES</h3>
-                            <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-                            </p>
+                        <div class="reviews-main">
+                            <div class="customer-list">
+                                <div class="item">
+                                    <div class="review-content">
+                                        <div class="header"> <p> Client Testimonial </p> </div>
+                                        <h3> Salil J Deshpande</h3>
+                                        <h4> Abbotsford, British Columbia</h4>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="review-content">
+                                        <div class="header"> <p> Client Testimonial </p> </div>
+                                        <h3>Sukhjit Saroya</h3>
+                                        <h4> Squamish, British Columbia</h4>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="review-content">
+                                        <div class="header"> <p> Client Testimonial </p> </div>
+                                        <h3>Sandeep Minhas</h3>
+                                        <h4> Mission, British Columbia</h4>
+                                        <p>"Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint occaecat et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "</p>
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
                         <section id="contactus-scroll" class="contactus-scroll">
                               <a id="lnk_contactus"><span></span>Contact Us</a>
@@ -120,34 +158,60 @@
                     </div>
                 </div>
             </section>
-            <section id="section-contact">
-                <div id="contactus-container" class="stripped">
+            <section id="section-projects">
+                <div class="section-header">
+                    <h2>Project Gallery</h2>
+                </div>
+                <div id="projectgallery-container" class="stripped">
                     <div class="section-content-container" data-aos="fade-up" data-aos-duration="3000">
-                        <div class="section-photo">
+                        <div class="gallery-container">
+                            <div class="gallery-text"> </div>
+                            <div id="flipGallery">
+                            </div>
                         </div>
-                        <div class="section-text">
-                            <h2>CONTACT</h2>
-                            <h3>FOUNDER</h3>
-                            <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </p>
-                            <br/><br/>
-                            <h3>AHMIS SERVICES</h3>
-                            <p>
-                                The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-                            </p>
-
-                        </div>
-                        <section id="top-scroll" class="top-scroll">
-                              <a id="lnk_top"><span></span>Go To Top</a>
-                        </section>
+                        <!--<section id="reviews-scroll" class="reviews-scroll">
+                              <a id="lnk_reviews"><span></span>Reviews</a>
+                        </section>-->
                     </div>
                 </div>
             </section>
-            
+            <section id="section-contact">
+                <div id="contactus-container">
+                    <div class="section-content-container" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="location">
+                            <h3> Our Location</h3>
+                              <div id="map-canvas" style="height: 250px">
+                              </div>
+                        </div>
+
+                        <div class="contactUs">
+                            <h3> Contact Us</h3>
+                            <div>
+                               <img src="images/phone.png" /><span>778-456-7894</span>
+                            </div>
+                            <div>
+                               <img src="images/mail.png" /><span>avtar.minhas@gsaconstruction.ca</span>
+                            </div>
+                            <div>
+                               <img src="images/fb2.png" /><span>Like us on facebook</span>
+                            </div>
+                        </div>    
+                    </div>
+                    <section id="top-scroll" class="top-scroll">
+                              <a id="lnk_top"><span></span>Go To Top</a>
+                    </section>
+                    </div>
+                </div>
+            </section>
+
             <script src="js/jquery-1.9.0.min.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
             <script src="js/home.js"></script>
+
+             <!-- Flip Gallery -->
+    <script src="js/third-party/flip-gallery/settings.js"></script>
+    <script src="js/third-party/flip-gallery/flipgallery.min.js"></script>
+
         </article>
         <footer>
             @copyrights

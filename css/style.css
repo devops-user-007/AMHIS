@@ -339,3 +339,9 @@ a {
           -ms-transform: scaleX(200);
               transform: scaleX(200);
       opacity: 1; }
+
+
+div#flipGallery > div:hover {
+    opacity: 0.85;
+    /* background-color: black; */
+}
